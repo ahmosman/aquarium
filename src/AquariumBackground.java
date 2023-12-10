@@ -2,11 +2,12 @@ import java.awt.*;
 
 public class AquariumBackground extends Resource {
 
-    private Image background;
-    public void showBackground(Graphics g) {
+    public void showBackground() {
 
-        background = getImage("aquarium.jpg", AquariumApp.appWidth, AquariumApp.appHeight);
-        g.drawImage(background, 0, 0, null);
+        graphics.drawImage(getImage(getFileName(), AquariumApp.appWidth, AquariumApp.appHeight), 0, 0, null);
     }
 
+    public String getFileName() {
+        return "aquarium.jpg";
+    }
 }

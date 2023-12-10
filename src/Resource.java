@@ -8,6 +8,9 @@ import java.util.logging.Logger;
 
 abstract public class Resource {
     String resourcesPath = "main/resources/";
+
+    Graphics graphics;
+
     private final Logger logger = Logger.getLogger(getClass().getName());
     protected Image getImage(String imageName) {
 
@@ -34,4 +37,10 @@ abstract public class Resource {
         }
         return null;
     }
+
+    public void setGraphics(Graphics g) {
+        graphics = g;
+    }
+
+    abstract protected String getFileName();
 }
