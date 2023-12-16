@@ -15,4 +15,12 @@ public class FishFactory {
         }
         return null;
     }
+
+    public static Fish createFishWithCoordinates(String fishType, double x, double y) {
+        Fish fish = createFish(fishType);
+        if (fish != null) {
+            fish.setStartPosition(x, y);
+        }
+        return fish;
+    }
 }

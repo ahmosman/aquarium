@@ -31,7 +31,7 @@ public class AquariumApp extends Application {
 
         stackPane = SetupUI.getStackPane();
 
-        Scene scene = new Scene(stackPane, appWidth, appHeight);
+        Scene scene = SetupUI.getScene(stackPane);
 
         // Set the stage to not display the window decorations (title bar, etc.)
 //        stage.initStyle(StageStyle.UNDECORATED);
