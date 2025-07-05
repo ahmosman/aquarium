@@ -2,11 +2,6 @@
 
 # Aquarium Project
 
-Name: Ahmed Osman <br />
-Student Number: 155986 <br />
-
-</header>
-
 ## About
 <p>
 This is a Java Based aquarium application to demonstrate how to use OOP principles, for example, abstract and inheritance.
